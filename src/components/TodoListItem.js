@@ -20,7 +20,7 @@ export class TodoListItem extends Component {
           <input  type="checkbox" 
                   onChange={ this.props.markComplete.bind(this, id) }>
           </input>
-          { title }
+          &nbsp;{ title }
           <span style={btnStyle} onClick={this.props.delTodo.bind(this, id)}><i className="fas fa-trash-alt"></i></span>
         </p>
       </div>
